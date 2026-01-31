@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>password</title>
+    <style>
+      body,html{
+        background-image: url("69.jpg");
+        width:100%;
+        height:100vh;
+        background-size:cover;
+        
+      }
+
+      .con{
+        height:100vh;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+
+      .cont{
+        width:300px;
+        height:300px;
+        display:grid;
+        align-items:center;
+        justify-items:center;
+        text-align:center;
+        position:absolute;
+        box-shadow: 0 0 40px black;
+      background-image:url("68.jpg");
+        border-radius:20px;
+        border:none;
+      }
+
+      .logo{
+        height:70px;
+        width:70px;
+        border-radius:50%;
+     border: solid 2px black;
+      }
+
+      .tiger{
+        font-size:18px;
+        color:white;
+        text-shadow: 2px 0 blue;
+      }
+
+      .pass{
+        width:250px;
+        height:30px;
+        border-radius:20px;
+     box-shadow: 0 0 40px black;
+        text-align:center;
+        background: transparent;
+        color:white;
+      }
+
+      .btn1{
+    
+        width:150px;
+        padding:10px;
+        border-radius:20px;
+        box-shadow: 0 0 40px black;
+        color:white;
+        background:transparent;
+        cursor:pointer;
+      }
+
+      .pass::placeholder{
+        color:white;
+        font-size:15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="con">
+      <div class="cont">
+        <img class="logo" src="logo.png">
+        <h1 class="tiger">Enter The Password For Unlock The World</h1>
+        
+        <!-- password input -->
+        <input type="password" id="pwd" placeholder="password" class="pass">
+        
+        <!-- button -->
+        <button class="btn1" onclick="nextpage()">Unlock</button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function nextpage(){
+        let password = document.getElementById("pwd").value;
+
+        if(password === "seung"){
+          window.location.href = "index(1).html"; // new html file
+        } else {
+          alert("Wrong Password ❌");
+        }
+      }
+    </script>
+  </body>
+</html>

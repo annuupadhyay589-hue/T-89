@@ -1,0 +1,172 @@
+<!DOCTYPE html>  <html>  
+
+  <head>  
+    <title>Seung world</title>  
+    <style>  
+    *{  
+      box-sizing: border-box;  
+      margin:0;  
+    }  
+    html,body{  
+      height: auto;  
+      width: 100%;  
+      background:#000000;  
+      
+    }  
+    .head{  
+      height: 35vh;  
+      width:100%;  
+      background-image:url("seung.jpg");  
+      border:solid 1px white;  
+      background-size:cover;  
+      box-shadow: 0 10px 20px darkblue;
+    }  
+    .navbar{  
+      height:30px;  
+      width:100%;  
+      display: flex;  
+      justify-content: right;  
+      }  
+      .btn{  
+        color:white;  
+        text-shadow: 0 2px blue;  
+        background: transparent;  
+        margin-right:10px;  
+       border:none;  
+        cursor: pointer;  
+        font-size:22px;
+      }  
+      .container{  
+        color:white;  
+        text-shadow: 0 2px blue;  
+        text-align: center;  
+        margin-top:15vh;  
+      }  
+    
+      .box{  
+        margin-top:30px;  
+        width:100%;  
+        height:30vh;  
+        color: white;  
+        text-shadow: 0 2px blue;  
+        text-align: center;  
+        border: solid 1px white;  
+        background-image:url("seung.jpg");  
+        background-size:cover; 
+        box-shadow: 0 10px 20px darkblue;}  
+  .bio {  
+    margin-top:15vh;  
+  }  
+  .nav{  
+    height:30px;  
+    border:solid 1px white;  
+    text-align: center;  
+    width:100%;  
+    color: white;  
+    text-shadow: 0 2px blue;  
+    margin-top:20px;  
+    box-shadow: 0 10px 20px darkblue;
+  }  
+  .font{  
+    width: 100%;  
+    height: 30px;  
+    display:flex;  
+    justify-content: center;  
+    align-items:center;
+    color:white;
+    margin:20px auto;
+    border:solid 1px white;
+    text-shadow: 0 2px blue;  
+    box-shadow: 0 10px 20px darkblue;
+  }  
+  .buttonbox{  
+    height:30vh;  
+    width:100%;  
+    box-shadow: 0 10px 20px darkblue;
+    background-image:url("seung.jpg");  
+    background-size:cover;  
+    margin:20px auto;
+    text-align: center;
+   }  
+  .picture{
+    margin-top:16px;
+    width:80%;
+    height:60px;
+    border-radius:20px;
+    box-shadow: 0 10px 20px darkblue;
+    background: none;
+    text-shadow: 0 2px blue;  
+    color:white;
+    cursor:pointer;
+    border:none;
+    font-size:22px;
+    border:solid 1px white;
+  }
+  .final{  
+    height: auto;  
+    width: 100%;  
+    text-align: center;  
+    color:white;  
+    margin:20px auto;  
+    text-shadow: 0 2px blue;  
+  }  
+</style>
+
+  </head>  
+     <body>  
+       <div class="head">  
+            <div class="navbar">  
+            <button class="btn" onclick="openpage()">Home</button>  
+            <button class="btn" onclick="callme()">Contact Me</button>  
+            <button class="btn" onclick="ex()">Exit</button></div>  <div class="container">  
+      <h1>Seung World</h1>  
+       <h3>Welcome Buddy </h3>  
+    </div>  
+     </div>  
+        
+        <div class="box">  
+        <h2 class="bio">"Bio"</h2>  
+        <h4>Royal Entry in 2006</h4>  
+        <h4>Stay Cool , Stay Classy</h4>  
+        <h4>Strongest</h4>  
+        <h4>Little Web Devloper</h4>  
+      </h2>  
+      
+      </div>  
+      <div class="font">
+        <h2>Details</h2>
+      </div>
+  
+     <div class="buttonbox">  
+     <button class="picture" onclick="openpic()">My Picture ✿</button>
+       <button class="picture" onclick="openwplink()">WhatsApp ✿</button>
+         <button class="picture" onclick="openinlink()">Instagram ✿</button>
+      </div>  
+      <div class="final">  
+        <p>Edit by darkstormxx </p>  
+      </div>  
+ </body>
+
+  </html>  
+  <script>  
+    function openpage(){  
+      window.location.href = "index.html";  
+    }  
+    function openwplink(){  
+      window.location.href = "index(wp).html";  
+    }  
+    function openinlink(){  
+      window.open("https://www.instagram.com/darkstormxx?igsh=aGRpejYzNzR3M3dp");
+    }  
+    function openpic(){  
+      window.location.href = "index(pic).html";  
+    }  
+    function callme() {
+    window.location.href = "tel:7017031453";
+  }
+  function ex(){
+    window.location.href = "index.html";  
+    
+  }
+    
+  </script>  

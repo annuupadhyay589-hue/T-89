@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Photo Frame</title>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f0c29,  #000000);
+    }
+
+    .card{
+        width: 330px;
+        padding: 20px;
+        border-radius: 25px;
+        background: rgba(255,255,255,0.07);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.15);
+        animation: fadeIn 1.4s ease;
+    }
+
+    .card img{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(255,255,255,0.2);
+        transition: 0.4s;
+    }
+
+    .card img:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(255,255,255,0.35);
+    }
+
+    .title{
+        margin-top: 18px;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    @keyframes fadeIn{
+        from{ opacity: 0; transform: translateY(20px); }
+        to{ opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="pic3.jpg" alt="My Photo">
+        <div class="title">It's Me Seung</div>
+    </div>
+</body>
+</html>
